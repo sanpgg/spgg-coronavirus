@@ -1,0 +1,179 @@
+@import url("./bootstrap.min.css");
+/* -----------------------------------------------------------------
+    - Spaces
+----------------------------------------------------------------- */
+/* -----------------------------------------------------------------
+    - Colors
+----------------------------------------------------------------- */
+a, a:hover {
+  color: #6D6E71;
+}
+
+small {
+  color: #aaaaaa;
+}
+
+.btn-link {
+  color: #000 !important;
+}
+
+.dark-bg {
+  background-color: #000;
+}
+
+/* -----------------------------------------------------------------
+    - Font
+----------------------------------------------------------------- */
+* {
+  font-family: "Arial", sans-serif;
+}
+
+footer {
+  font-size: 12px;
+}
+
+@media (max-width: 767.98px) {
+  .text-center-sm {
+    text-align: center;
+  }
+}
+.underlined {
+  text-decoration: underline;
+}
+
+/* -----------------------------------------------------------------
+    - Menu
+----------------------------------------------------------------- */
+.menu-logo {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.navbar-toggler {
+  border-color: transparent !important;
+}
+
+/* -----------------------------------------------------------------
+    - Content
+----------------------------------------------------------------- */
+.faq-image {
+  width: 8rem;
+  height: 7rem;
+}
+
+.recommendation-image {
+  width: 8rem;
+  height: 8rem;
+}
+
+.btn-link {
+  text-align: left;
+}
+
+.visualization-container {
+  max-height: 500px;
+}
+
+.card-header {
+  background-color: #f8f9fa !important;
+  border-bottom: none;
+}
+
+/* -----------------------------------------------------------------
+    - Footer
+----------------------------------------------------------------- */
+.social-icon {
+  margin-right: 0.88rem;
+}
+
+/* -----------------------------------------------------------------
+    - Preloader
+----------------------------------------------------------------- */
+.preloader {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1106;
+  opacity: 1;
+}
+
+.preloader__wrap {
+  width: 100%;
+  max-width: 150px;
+}
+
+.preloader__progress {
+  background: #FFF;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.preloader__progress span {
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+}
+
+.circle-pulse > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transform: scale(0);
+  animation: pulse 1.6s linear infinite;
+}
+
+.circle-pulse__1 {
+  width: 6rem;
+  height: 6rem;
+  margin-top: -3rem;
+  margin-left: -3rem;
+  background-color: #000;
+}
+
+.circle-pulse__2 {
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-top: -2.4rem;
+  margin-left: -2.4rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation-delay: -0.8s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
