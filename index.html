@@ -51,24 +51,25 @@
 <body>
 
 <!-- Preloader -->
-<div class="preloader">
+<div class="preloader" role="progressbar" aria-labelledby="cargando">
     <div class="preloader__wrap">
         <div class="circle-pulse">
             <div class="circle-pulse__1"></div>
             <div class="circle-pulse__2"></div>
         </div>
-        <div class="preloader__progress"><span></span></div>
+        <div class="peloader__progress"><span></span></div>
+        <p style="height: 130px;">Cargando</p>
     </div>
 </div>
 
 <!-- Navigation bar -->
-<header>
+<header role="banner">
     <!-- Logo image -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="./img/logo.svg" data-fallback="./img/logo.png" class="menu-logo d-inline-block align-top" alt="San Pedro Garza Garcia logo"/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+        <a class="navbar-brand" href="#" title="Menu principal">
+            <img data-src="./img/logo.svg" data-fallback="./img/logo.png" class="menu-logo d-inline-block align-top lazyload" alt="Escudo de San Pedro Garza García"/>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="registerEvent('menu clic')">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Boton de menú" onclick="registerEvent('menu clic')">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -94,11 +95,11 @@
 </header>
 
 <!-- Content -->
-<div>
+<main role="main">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./img/main_banner.jpg" class="d-block w-100" alt="coronavirus banner">
+                <img data-src="./img/main_banner.jpg" class="d-block w-100 lazyload" alt="Imágen de campaña - Medidas e información">
             </div>
         </div>
     </div>
@@ -193,7 +194,7 @@
     </div>
 
     <div class="pb-5">
-        <img src="./img/terciary_banner.jpg" class="img-fluid" alt="Responsive image">
+        <img data-src="./img/terciary_banner.jpg" class="img-fluid lazyload" alt="Imagen de las montañas">
     </div>
 
     <div id="emergency" class="container-fluid p-md-5 p-4">
@@ -211,7 +212,7 @@
                     <li>Se requiere a todas los habitantes del Municipio a permanecer en casa si no tiene una causa urgente o imprescindible que lo obligue a salir de ella.</li>
                     <li>La Secretaría de Seguridad Pública quedó facultada para hacer cumplir estas disposiciones.</li>
                 </ol>
-                <p>Puedes descargar la versión completa aquí: <a class="underlined" href="https://bit.ly/DeclaratoriaEmergenciaSPGG" target="_blank" onclick="registerEvent('declaratoria emergencia pdf')">bit.ly/DeclaratoriaEmergenciaSPGG</a></p>
+                <p>Puedes descargar la versión completa aquí: <a class="underlined" href="https://bit.ly/DeclaratoriaEmergenciaSPGG" title="Comunicado de declaratoria de emergencia" target="_blank" onclick="registerEvent('declaratoria emergencia pdf')">bit.ly/DeclaratoriaEmergenciaSPGG</a></p>
             </div>
         </div>
 
@@ -289,7 +290,7 @@
                         <div id="emergency1CollapseTwo" class="collapse" aria-labelledby="emergency1HeadingTwo" data-parent="#emergencyAccordion1">
                             <div class="card-body">
                                 <p>Para cumplir con medidas de distanciamiento social, los restaurantes cerrarán sus puertas a comensales. Sin embargo, seguirán operando por medio de servicio a domicilio y comida para llevar.
-                                <br>Puedes leer el comunicado completo <a href="https://www.sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104888" target="_blank" onclick="registerEvent('comunicado 18 marzo - pregunta restauranteros')">aquí</a>.</p>
+                                <br>Puedes leer el comunicado completo <a href="https://www.sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104888" title="Comunicado oficial del 18 de marzo" target="_blank" onclick="registerEvent('comunicado 18 marzo - pregunta restauranteros')">aquí</a>.</p>
                             </div>
                         </div>
                     </div>
@@ -362,7 +363,7 @@
                             <div class="card-body">
                                 <p>En San Pedro buscamos el bienestar de nuestros habitantes, así como de nuestros colaboradores servidores públicos.
                                 <br>Por eso, quienes tengan 60 años o más, o un cuadro médico de inmunodeficiencia estarán dispensados de trabajar físicamente.
-                                <br>Puedes revisar el comunicado oficial <a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104885" target="_blank" onclick="registerEvent('medidas precuatorias pdf')">aquí</a>, y contactar al Departamento de Recursos Humanos con cualquier duda.</p>
+                                <br>Puedes revisar el comunicado oficial <a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104885" title="Comunicado oficial de medidas precautorias" target="_blank" onclick="registerEvent('medidas precuatorias pdf')">aquí</a>, y contactar al Departamento de Recursos Humanos con cualquier duda.</p>
                             </div>
                         </div>
                     </div>
@@ -490,7 +491,7 @@
                         <div id="emergency6CollapseTwo" class="collapse" aria-labelledby="emergency6HeadingTwo" data-parent="#emergencyAccordion6">
                             <div class="card-body">
                                 <p>En el bot de Atención Ciudadana, conocido como Sam Petrino, puedes reportar lo siguiente a través del WhatsApp
-                                    <a class="underlined" href="https://bit.ly/CHATEAconSAM" target="_blank">+52 1 81 12 12 12 12</a>:</p>
+                                    <a class="underlined" href="https://bit.ly/CHATEAconSAM" target="_blank" title="BotBot de San Pedro en WhatsApp">+52 1 81 12 12 12 12</a>:</p>
                                 <ul>
                                     <li>Antros, bares y cantinas abiertas</li>
                                     <li>Cines y centros de espectáculos operando</li>
@@ -511,12 +512,12 @@
     </div>
 
     <div class="pb-3">
-       <img src="./img/city_banner.jpg" class="img-fluid" alt="Responsive image">
+       <img data-src="./img/city_banner.jpg" class="img-fluid lazyload" alt="Imagen de la ciudad">
     </div>
 
     <div id="faq" class="container-fluid p-4">
         <div class="mb-5 text-center">
-            <img src="./img/preguntas.png" class="faq-image pl-4" alt="Responsive image">
+            <img data-src="./img/preguntas.png" class="faq-image pl-4 lazyload" alt="Imagen de preguntas frecuentes">
             <h3>Preguntas frecuentes</h3>
         </div>
         <div id="accordion" class="mt-3 col-12 col-lg-10 m-auto">
@@ -751,7 +752,7 @@
     </div>
 
     <div class="pb-3">
-        <img src="./img/secondary_banner.jpg" class="img-fluid" alt="Responsive image">
+        <img data-src="./img/secondary_banner.jpg" class="img-fluid lazyload" alt="Imagen de montañas al atardecer">
     </div>
 
     <div id="communication" class="container-fluid p-md-5 p-4">
@@ -759,14 +760,15 @@
             <div class="col-md-12">
                 <h3 class="mb-4">Comunicados Oficiales</h3>
                 <ul>
-                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104889" target="_blank" onclick="registerEvent('comunicado 18 de marzo - 2')">Industria restaurantera se suma a medidas de prevención</a> (18 de marzo)</b></li>
-                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104888" target="_blank" onclick="registerEvent('comunicado 18 de marzo - 1')">Comunicado con Restaurantes respecto a COVID-19</a> (18 de marzo)</b></li>
-                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104887" target="_blank" onclick="registerEvent('comunicado 17 de marzo')">Declara San Pedro emergencia por COVID-19</a> (17 de marzo)</b></li>
-                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104882" target="_blank" onclick="registerEvent('comunicado 16 de marzo')">Comunicado con centros comerciales</a> (16 de marzo)</b></li>
-                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104885" target="_blank" onclick="registerEvent('comunicado 16 de marzo - 2')">Medidas Precautorias en Oficinas Municipales</a> (16 de marzo)</b></li>
-                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104879" target="_blank" onclick="registerEvent('comunicado 14 de marzo')">Llamado urgente a cancelar y evitar eventos masivos</a> (14 de marzo)</b></li>
-                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104880" target="_blank" onclick="registerEvent('comunicado 12 de marzo - 1')">Comunicado oficial COVID-19</a> (12 de marzo)</b></li>
-                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104883" target="_blank" onclick="registerEvent('comunicado 12 de marzo - 2')">Criterios de cancelación de eventos</a> (12 de marzo)</b></li>
+                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104892" target="_blank" onclick="registerEvent('comunicado 20 de marzo')" title="Comunicado oficial 20 de marzo">Sostiene Alcalde reunión virtual con plataformas de entrega a domicilio</a> (20 de marzo)</b></li>
+                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104889" target="_blank" onclick="registerEvent('comunicado 18 de marzo - 2')" title="Comunicado oficial 18 de marzo">Industria restaurantera se suma a medidas de prevención</a> (18 de marzo)</b></li>
+                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104888" target="_blank" onclick="registerEvent('comunicado 18 de marzo - 1')" title="Comunicado oficial 18 de marzo">Comunicado con Restaurantes respecto a COVID-19</a> (18 de marzo)</b></li>
+                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104887" target="_blank" onclick="registerEvent('comunicado 17 de marzo')" title="Comunicado oficial 17 de marzo">Declara San Pedro emergencia por COVID-19</a> (17 de marzo)</b></li>
+                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104882" target="_blank" onclick="registerEvent('comunicado 16 de marzo')" title="Comunicado oficial 16 de marzo">Comunicado con centros comerciales</a> (16 de marzo)</b></li>
+                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104885" target="_blank" onclick="registerEvent('comunicado 16 de marzo - 2')" title="Comunicado oficial 16 de marzo">Medidas Precautorias en Oficinas Municipales</a> (16 de marzo)</b></li>
+                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104879" target="_blank" onclick="registerEvent('comunicado 14 de marzo')" title="Comunicado oficial 14 de marzo">Llamado urgente a cancelar y evitar eventos masivos</a> (14 de marzo)</b></li>
+                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104880" target="_blank" onclick="registerEvent('comunicado 12 de marzo - 1')" title="Comunicado oficial 12 de marzo">Comunicado oficial COVID-19</a> (12 de marzo)</b></li>
+                    <li class="mb-2"><b><a class="underlined" href="https://sanpedro.gob.mx/Prensa/Detail_Noticia.asp?folio=104883" target="_blank" onclick="registerEvent('comunicado 12 de marzo - 2')" title="Comunicado oficial 12 de marzo">Criterios de cancelación de eventos</a> (12 de marzo)</b></li>
                 </ul>
             </div>
         </div>
@@ -774,22 +776,22 @@
 
     <div class="container-fluid dark-bg d-none d-lg-block p-md-5 p-4">
         <div class="mb-2 d-flex flex-row justify-content-around">
-            <img class="recommendation-image" src="./img/calma.png" alt="">
-            <img class="recommendation-image" src="./img/casa.png" alt="">
-            <img class="recommendation-image" src="./img/lava.png" alt="">
-            <img class="recommendation-image" src="./img/eventos.png" alt="">
-            <img class="recommendation-image" src="./img/grupos.png" alt="">
-            <img class="recommendation-image" src="./img/llama.png" alt="">
+            <img class="recommendation-image lazyload" data-src="./img/calma.png" alt="Imagen de manten la calmca">
+            <img class="recommendation-image lazyload" data-src="./img/casa.png" alt="Imagen de evitar salir">
+            <img class="recommendation-image lazyload" data-src="./img/lava.png" alt="Imagen de lava bien tus manos">
+            <img class="recommendation-image lazyload" data-src="./img/eventos.png" alt="Imagen de pospón eventos">
+            <img class="recommendation-image lazyload" data-src="./img/grupos.png" alt="Imagen de evitar lugares concurridos">
+            <img class="recommendation-image lazyload" data-src="./img/llama.png" alt="Imagen de llama al 070 si presentas sintomas">
         </div>
     </div>
 
-</div>
+</main>
 
 <!-- Footer -->
-<footer id="footer" class="container-lg mt-5">
+<footer id="footer" class="container-lg mt-5" role="contentinfo">
     <div class="row mb-2">
         <div class="col-md-3 d-none d-sm-block text-center mb-4">
-            <a href="#"><img class="img-responsive" src="img/logo_149.png" alt=""></a>
+            <a href="#"><img class="img-responsive lazyload" data-src="img/logo_149.png" alt="Escudo de San Pedro Garza García"></a>
         </div>
         <div class="col-md-5 text-center-sm mb-4 mt-2">
             <div class="mb-2">
@@ -807,13 +809,13 @@
         </div>
         <div class="col-md-4 text-center mb-4 mt-2">
             <div class="mb-3">
-                <img class="img-fluid" src="./img/superplaceholder.png" alt="superciudadanos san pedro">
+                <img class="img-fluid lazyload" data-src="./img/superplaceholder.png" alt="Imagen de slogan superciudadanos San Pedro">
             </div>
             <div class="d-flex justify-content-center">
-                <a href="https://www.facebook.com/SanPedroGGNL" role="button" aria-pressed="true" target="_blank" onclick="registerEvent('facebook')"><i class="fab fa-facebook fa-2x social-icon"></i></a>
-                <a href="https://instagram.com/sanpedronl" role="button" aria-pressed="true" target="_blank" onclick="registerEvent('instagram')"><i class="fab fa-lg fa-instagram fa-2x social-icon"></i></a>
-                <a href="https://www.youtube.com/channel/UCu-NI7m9b10er45DLQCn1DQ" role="button" aria-pressed="true" target="_blank" onclick="registerEvent('youtube')"><i class="fab fa-youtube fa-2x social-icon"></i></a>
-                <a href="https://twitter.com/SanPedroNL" role="button" aria-pressed="true" target="_blank" onclick="registerEvent('twitter')"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.facebook.com/SanPedroGGNL" title="Facebook San Pedro" role="button" aria-pressed="true" target="_blank" onclick="registerEvent('facebook')"><i class="fab fa-facebook fa-2x social-icon"></i></a>
+                <a href="https://instagram.com/sanpedronl" title="Instagram San Pedro" role="button" aria-pressed="true" target="_blank" onclick="registerEvent('instagram')"><i class="fab fa-lg fa-instagram fa-2x social-icon"></i></a>
+                <a href="https://www.youtube.com/channel/UCu-NI7m9b10er45DLQCn1DQ" title="Youtube San Pedro" role="button" aria-pressed="true" target="_blank" onclick="registerEvent('youtube')"><i class="fab fa-youtube fa-2x social-icon"></i></a>
+                <a href="https://twitter.com/SanPedroNL" title="Twitter San Pedro" role="button" aria-pressed="true" target="_blank" onclick="registerEvent('twitter')"><i class="fab fa-twitter fa-2x"></i></a>
             </div>
         </div>
     </div>
@@ -822,14 +824,14 @@
     </div>
 </footer>
 
-<script src="./js/jquery-3.4.1.min.js"></script>
-<script src="./js/plugins.min.js"></script>
-<script src="./js/bootstrap.bundle.min.js"></script>
-<script src="./js/fontawesome.min.js"></script>
-<script src="./js/main.js"></script>
-<script src="https://public.flourish.studio/resources/embed.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128587918-1"></script>
-<script>
+<script defer src="./js/jquery-3.4.1.min.js"></script>
+<script defer src="./js/plugins.min.js"></script>
+<script defer src="./js/bootstrap.bundle.min.js"></script>
+<script defer src="./js/fontawesome.min.js"></script>
+<script defer src="./js/main.js"></script>
+<script defer src="https://public.flourish.studio/resources/embed.js"></script>
+<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-128587918-1"></script>
+<script defer>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
