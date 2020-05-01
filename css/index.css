@@ -20,6 +20,9 @@ small {
 .dark-bg {
   background-color: #000;
 }
+.color-white{
+    color: white;
+}
 
 /* -----------------------------------------------------------------
     - Font
